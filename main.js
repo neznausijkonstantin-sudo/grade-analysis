@@ -57,7 +57,13 @@ function addLetterGrade(data) {
     return result;
 }
 
-
-
-
 console.log("проект")
+let avg = calculateAverage(grades);
+console.log("Средний балл группы: " + avg);
+let best = findTopStudent(grades);
+console.log("Лучший студент: " + best);
+let failed = filterFailed(grades, 60);
+console.log("Список должников: " + failed);
+let finalGrades = addLetterGrade(grades);
+console.log("Итоговый массив с оценками:");
+console.log(finalGrades);
